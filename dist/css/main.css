@@ -1,0 +1,56 @@
+body {
+  background-color: aqua; }
+
+@media only screen and (max-width: 2440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; }
+  button {
+    background: none;
+    border: none; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1128; }
+    body main .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      background-color: #5941a9;
+      color: #e5d4ed;
+      width: 792px;
+      height: 435px;
+      border-radius: 71px; }
+      body main .container p {
+        font-size: 83px; }
+      body main .container .rectangle {
+        border-radius: 20px;
+        width: 160px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        background-color: #514f59; }
+        body main .container .rectangle .triangle {
+          font-size: 100px;
+          color: #c4c4c4; }
+    body main #screen-2 {
+      position: relative;
+      top: -80px;
+      opacity: 0;
+      color: #e5d4ed; }
+      body main #screen-2 .options {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px; }
+        body main #screen-2 .options a {
+          color: #e5d4ed;
+          font-size: 1.5rem; }
+      body main #screen-2 p {
+        text-align: center;
+        font-size: 3rem; } }
