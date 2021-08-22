@@ -9,7 +9,10 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
   }
-
+  .toggler {
+    display: none;
+    transition: all 1.5s ease-in-out;
+  }
   button {
     background: none;
     border: none;
@@ -21,6 +24,7 @@ body {
     height: 100vh;
     background-color: #1d1128;
     main {
+      opacity: 10;
       .container {
         display: flex;
         justify-content: center;
@@ -45,7 +49,7 @@ body {
           background-color: #514f59;
           .triangle {
             font-size: 100px;
-            color: #000000;
+            color: #c4c4c4;
           }
         }
       }
@@ -69,6 +73,71 @@ body {
         p {
           text-align: center;
           font-size: 3rem;
+        }
+      }
+    }
+    .login {
+      opacity: 0;
+      .container_login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #5941a9;
+        color: #e5d4ed;
+        height: 633px;
+        width: 533px;
+
+        border-radius: 71px;
+        padding-top: 20px;
+        p {
+          font-size: 83px;
+          margin-bottom: 70px;
+        }
+        // this is the styles for the form fields
+        .login-form {
+          ::placeholder {
+            font-size: 1.2rem;
+            padding-left: 20px;
+            opacity: 1;
+            color: black;
+          }
+          #userName,
+          #password {
+            width: 372px;
+            height: 59px;
+            border-radius: 15px;
+            border: none;
+            background-color: #c4c4c4;
+          }
+        }
+        .options2 {
+          width: 100%;
+          height: 100%;
+          padding: 0 50px;
+          display: flex;
+          align-items: flex-end;
+          flex-direction: row;
+          justify-content: space-between;
+          a {
+            color: #e5d4ed;
+            font-size: 1rem;
+            margin: 10px;
+          }
+        }
+      }
+
+      // this is the button
+      .rectangle_2 {
+        border-radius: 20px;
+        width: 125px;
+        height: 78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6d72c3;
+        .triangle_2 {
+          font-size: 75px;
+          color: #c4c4c4;
         }
       }
     }

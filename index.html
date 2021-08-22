@@ -15,7 +15,7 @@
     <title>Lost Souls</title>
   </head>
   <body>
-    <main>
+    <main id="homeScreen">
       <div id="container" class="container">
         <p>Lost Souls!</p>
         <div id="rect" class="rectangle">
@@ -28,12 +28,43 @@
       <div id="screen-2" class="hidden phase2">
         <p>Welcome Back Traveler!</p>
         <div class="options">
-          <a href="#">Log-In</a>
-          <a href="#">Sign-up</a>
+          <a href="#" id="login-screen">Log-In</a>
+          <a href="#" id="signUp-screen">Sign-up</a>
         </div>
       </div>
     </main>
-
+    <section id="loginScreen" class="login toggler">
+      <div class="container_login">
+        <p>Lost Souls!</p>
+        <form class="login-form">
+          <label for="userName"></label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Please Enter your Username"
+          /><br /><br />
+          <label for="password"></label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Please Enter your Pasword"
+          /><br /><br />
+        </form>
+        <!-- login button -->
+        <div id="rect_2" class="rectangle_2">
+          <button class="triangle_2">
+            <div id="triangle_2" class="fas fa-caret-right"></div>
+          </button>
+        </div>
+        <!-- sign up and forgot your password -->
+        <div class="options2">
+          <a href="#"> Forgot your password?</a>
+          <a href="#"> Sign-up</a>
+        </div>
+      </div>
+    </section>
     <script src="/script.js"></script>
   </body>
 </html>
