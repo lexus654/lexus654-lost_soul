@@ -69,4 +69,5 @@ loginScreen.addEventListener("click", function () {
     transition("loginScreen");
     console.log("part3");
   }, 1000);
+  // comment
 });
