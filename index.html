@@ -15,11 +15,11 @@
     <title>Lost Souls</title>
   </head>
   <body>
-    <main id="homeScreen">
+    <main id="homeScreen" class="">
       <div id="container" class="container">
-        <p>Lost Souls!</p>
+        <p class="cursor"><a href="/index.html">Lost Souls!</a></p>
         <div id="rect" class="rectangle">
-          <button class="triangle">
+          <button class="triangle cursor">
             <div id="triangle" class="fas fa-caret-right"></div>
           </button>
         </div>
@@ -33,9 +33,11 @@
         </div>
       </div>
     </main>
-    <section id="loginScreen" class="login toggler">
+    <!-- login section -->
+    <section id="loginScreen" class="login login-toggler">
       <div class="container_login">
-        <p>Lost Souls!</p>
+        <p id="loginGoBackHome" class="cursor goBackHome">Lost Souls!</p>
+        <span>Login Screen</span>
         <form class="login-form">
           <label for="userName"></label>
           <input
@@ -60,8 +62,49 @@
         </div>
         <!-- sign up and forgot your password -->
         <div class="options2">
-          <a href="#"> Forgot your password?</a>
-          <a href="#"> Sign-up</a>
+          <a href="#" id="goingToSignUP"> Sign-up</a>
+        </div>
+      </div>
+    </section>
+    <!-- sign up section //////////////////////////////////////////////////////////////////////// -->
+    <section id="signupScreen" class="signup signup-toggler">
+      <div class="container_signup">
+        <p id="signupGoBackHome" class="cursor goBackHome">Lost Souls!</p>
+        <span> Sign up Screen </span>
+        <form class="signup-form">
+          <label for="userName"></label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Please Enter your Username"
+          /><br /><br />
+          <label for="password"></label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Please Enter your Pasword"
+          /><br /><br />
+          <label for="email"></label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Please Enter your email"
+          /><br /><br />
+        </form>
+        <!-- signup button -->
+        <div id="rect_2" class="rectangle_2">
+          <button class="triangle_2">
+            <div id="triangle_2" class="fas fa-caret-right"></div>
+          </button>
+        </div>
+        <!-- sign up and forgot your password -->
+        <div class="options2">
+          <a href="#" id="goingToLogin">
+            Already have an account? Log-in here</a
+          >
         </div>
       </div>
     </section>

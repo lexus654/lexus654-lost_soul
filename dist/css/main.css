@@ -7,9 +7,17 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif; }
-  .toggler {
+  .login-toggler {
     display: none;
     transition: all 1.5s ease-in-out; }
+  .signup-toggler {
+    display: none;
+    transition: all 1.5s ease-in-out; }
+  .home-toggler {
+    display: none;
+    transition: all 1.5s ease-in-out; }
+  .cursor {
+    cursor: pointer; }
   button {
     background: none;
     border: none; }
@@ -34,6 +42,9 @@ body {
         border-radius: 71px; }
         body main .container p {
           font-size: 83px; }
+          body main .container p a {
+            text-decoration: none;
+            color: #e5d4ed; }
         body main .container .rectangle {
           border-radius: 20px;
           width: 160px;
@@ -71,9 +82,12 @@ body {
         width: 533px;
         border-radius: 71px;
         padding-top: 20px; }
-        body .login .container_login p {
+        body .login .container_login .goBackHome {
           font-size: 83px;
-          margin-bottom: 70px; }
+          margin-bottom: 20px; }
+        body .login .container_login span {
+          margin-bottom: 20px;
+          font-size: 40px; }
         body .login .container_login .login-form ::placeholder {
           font-size: 1.2rem;
           padding-left: 20px;
@@ -85,7 +99,14 @@ body {
           height: 59px;
           border-radius: 15px;
           border: none;
-          background-color: #c4c4c4; }
+          background-color: #c4c4c4;
+          font-size: 24px;
+          padding: 0 10px;
+          text-align: center;
+          outline: none; }
+          body .login .container_login .login-form #userName:focus,
+          body .login .container_login .login-form #password:focus {
+            box-shadow: 0 0 3pt 2pt #1d1128; }
         body .login .container_login .options2 {
           width: 100%;
           height: 100%;
@@ -93,7 +114,7 @@ body {
           display: flex;
           align-items: flex-end;
           flex-direction: row;
-          justify-content: space-between; }
+          justify-content: center; }
           body .login .container_login .options2 a {
             color: #e5d4ed;
             font-size: 1rem;
@@ -108,4 +129,66 @@ body {
         background-color: #6d72c3; }
         body .login .rectangle_2 .triangle_2 {
           font-size: 75px;
-          color: #c4c4c4; } }
+          color: #c4c4c4; }
+  .signup {
+    opacity: 0; }
+    .signup .container_signup {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #5941a9;
+      color: #e5d4ed;
+      height: 633px;
+      width: 533px;
+      border-radius: 71px;
+      padding-top: 20px; }
+      .signup .container_signup .goBackHome {
+        font-size: 83px;
+        margin-bottom: 20px; }
+      .signup .container_signup span {
+        margin-bottom: 20px;
+        font-size: 40px; }
+      .signup .container_signup .signup-form ::placeholder {
+        font-size: 1.2rem;
+        padding-left: 20px;
+        opacity: 1;
+        color: black; }
+      .signup .container_signup .signup-form #userName,
+      .signup .container_signup .signup-form #password,
+      .signup .container_signup .signup-form #email {
+        font-size: 24px;
+        padding: 0 10px;
+        text-align: center;
+        width: 372px;
+        height: 59px;
+        border-radius: 15px;
+        border: none;
+        background-color: #c4c4c4;
+        outline: none; }
+        .signup .container_signup .signup-form #userName:focus,
+        .signup .container_signup .signup-form #password:focus,
+        .signup .container_signup .signup-form #email:focus {
+          box-shadow: 0 0 3pt 2pt #1d1128; }
+      .signup .container_signup .options2 {
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: center; }
+        .signup .container_signup .options2 a {
+          color: #e5d4ed;
+          font-size: 1rem;
+          margin: 10px; }
+    .signup .rectangle_2 {
+      border-radius: 20px;
+      width: 125px;
+      height: 78px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #6d72c3; }
+      .signup .rectangle_2 .triangle_2 {
+        font-size: 75px;
+        color: #c4c4c4; } }
